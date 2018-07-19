@@ -96,6 +96,8 @@
 
 	["Mastering the Game of Go"](http://incompleteideas.net/book/the-book-2nd.html) chapter of book by Richard Sutton and Andrew Barto
 
+	[AlphaGo Zero overview](http://www.depthfirstlearning.com/2018/AlphaGoZero)
+
 	["Mastering the Game of Go without Human Knowledge"](#mastering-the-game-of-go-without-human-knowledge-silver-et-al) by Silver et al. `paper` `summary`  
 	["Mastering the Game of Go with Deep Neural Networks and Tree Search"](#mastering-the-game-of-go-with-deep-neural-networks-and-tree-search-silver-et-al) by Silver et al. `paper` `summary`  
 	["Combining Online and Offline Knowledge in UCT"](http://machinelearning.org/proceedings/icml2007/papers/387.pdf) by Gelly and Silver `paper` ([talk](https://youtube.com/watch?v=Bm7zah_LrmE) `video`)  
@@ -149,6 +151,8 @@
 ----
   - *Poker*  
 
+	[Libratus overview](https://thegradient.pub/libratus-poker)
+
 	[Libratus "Science" magazine](http://science.sciencemag.org/content/early/2017/12/15/science.aao1733.full) `paper`  
 	["Safe and Nested Subgame Solving for Imperfect-Information Games"](https://arxiv.org/abs/1705.02955) by Noam Brown and Tuomas Sandholm `paper` ([talk](https://vimeo.com/248533943#t=53s) `video`, [post](https://thegradient.pub/libratus-poker))  
 	["Depth-Limited Solving for Imperfect-Information Games"](https://arxiv.org/abs/1805.08195) by Brown, Sandholm, Amos `paper`  
@@ -172,11 +176,13 @@
 ----
   - *Poker*  
 
-	[DeepStack "Science" magazine](http://science.sciencemag.org/content/early/2017/03/01/science.aam6960) `paper`  
-	["DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker"](#deepstack-expert-level-artificial-intelligence-in-no-limit-poker-moravcik-et-al) by Moravcik et al. `paper` `summary`  
-
 	<http://deepstack.ai>  
 	<http://twitter.com/DeepStackAI>  
+
+	[DeepStack overview](https://www.depthfirstlearning.com/2018/DeepStack)
+
+	[DeepStack "Science" magazine](http://science.sciencemag.org/content/early/2017/03/01/science.aam6960) `paper`  
+	["DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker"](#deepstack-expert-level-artificial-intelligence-in-no-limit-poker-moravcik-et-al) by Moravcik et al. `paper` `summary`  
 
 	[DeepStack overview](https://vimeo.com/248532904) by Michael Bowling `video`  
 	[DeepStack overview](https://youtu.be/02xIkHowQOk?t=11m45s) by Michael Bowling `video`  
@@ -227,9 +233,9 @@
 ----
   - *Quake III Arena CTF*
 
-	["Human-level Performance in First-person Multiplayer Games with Population-based Deep Reinforcement Learning"](https://deepmind.com/documents/224/capture_the_flag.pdf) by Jaderberg et al. `paper`
+	[FTW agent overview](https://deepmind.com/blog/capture-the-flag)
 
-	[FTW agent overview](https://deepmind.com/blog/capture-the-flag/)
+	["Human-level Performance in First-person Multiplayer Games with Population-based Deep Reinforcement Learning"](https://deepmind.com/documents/224/capture_the_flag.pdf) by Jaderberg et al. `paper`
 
 	[FTW agents team vs human team](https://youtube.com/watch?v=dltN4MxV1RI) `video`
 
@@ -282,7 +288,7 @@
   [overview](https://youtube.com/watch?v=jtjW5Pye_44) by Sergey Levine `video`  
   [overview](http://videolectures.net/iclr2016_levine_deep_learning/) by Sergey Levine `video`  
 
-  [overview](https://facebook.com/nipsfoundation/videos/1554594181298482/) by Pieter Abbeel `video`  
+  [overview](https://facebook.com/nipsfoundation/videos/1554594181298482) by Pieter Abbeel `video`  
   [overview](https://youtube.com/watch?v=TERCdog1ddE) by Pieter Abbeel `video`  
   [overview](http://on-demand.gputechconf.com/gtc/2016/video/S6812.html) by Pieter Abbeel `video`  
   [overview](https://youtu.be/xe-z4i3l-iQ?t=30m35s) by Pieter Abbeel `video`  
@@ -660,9 +666,7 @@
   ["Weight Uncertainty in Neural Networks"](#weight-uncertainty-in-neural-networks-blundell-cornebise-kavukcuoglu-wierstra) by Blundell et al. `paper` `summary`  
   ["BBQ-Networks: Efficient Exploration in Deep Reinforcement Learning for Task-Oriented Dialogue Systems"](https://arxiv.org/abs/1608.05081) by Lipton et al. `paper`  
   ["Noisy Networks for Exploration"](#noisy-networks-for-exploration-fortunato-et-al) by Fortunato et al. `paper` `summary`  
-  ["Efficient Exploration through Bayesian Deep Q-Networks"](https://arxiv.org/abs/1802.04412) by Azizzadenesheli et al. `paper`  
-  ["RL^2: Fast Reinforcement Learning via Slow Reinforcement Learning"](#rl2-fast-reinforcement-learning-via-slow-reinforcement-learning-duan-schulman-chen-bartlett-sutskever-abbeel) by Duan et al. `paper` `summary`  
-  ["Learning to Reinforcement Learn"](#learning-to-reinforcement-learn-wang-et-al) by Wang et al. `paper` `summary`  
+  ["The Uncertainty Bellman Equation and Exploration"](https://arxiv.org/abs/1709.05380) by O'Donoghue et al. `paper`  
 
   [**interesting papers**](#interesting-papers---exploration-and-intrinsic-motivation---bayesian-exploration-models)
 
@@ -1684,12 +1688,13 @@ interesting recent papers:
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#games> (demo)
   - `paper` <http://science.sciencemag.org/content/early/2017/03/01/science.aam6960> ("Science")
   - `video` <https://youtube.com/playlist?list=PLX7NnbJAq7PlA2XpynViLOigzWtmr6QVZ> (demo matches)
-  - <http://deepstack.ai>
-  - <http://twitter.com/DeepStackAI>
   - `video` <https://vimeo.com/248532904> (Bowling)
   - `video` <https://youtu.be/02xIkHowQOk?t=11m45s> (Bowling)
   - `video` <https://youtube.com/watch?v=qndXrHcV1sM> (Bowling)
   - `video` <http://videolectures.net/aaai2017_bowling_sandholm_poker/#t=177> (Bowling)
+  - `post` <https://www.depthfirstlearning.com/2018/DeepStack>
+  - <http://deepstack.ai>
+  - <http://twitter.com/DeepStackAI>
   - `code` <https://github.com/lifrordi/DeepStack-Leduc>
 
 
@@ -1824,7 +1829,7 @@ interesting recent papers:
 #### ["Off-policy Evaluation for Slate Recommendation"](https://arxiv.org/abs/1605.04812) Swaminathan, Krishnamurthy, Agarwal, Dudík, Langford, Jose, Zitouni
 >	"This paper studies the evaluation of policies that recommend an ordered set of items (e.g., a ranking) based on some context---a common scenario in web search, ads, and recommendation. We build on techniques from combinatorial bandits to introduce a new practical estimator that uses logged data to estimate a policy's performance. A thorough empirical evaluation on real-world data reveals that our estimator is accurate in a variety of settings, including as a subroutine in a learning-to-rank task, where it achieves competitive performance. We derive conditions under which our estimator is unbiased---these conditions are weaker than prior heuristics for slate evaluation---and experimentally demonstrate a smaller bias than parametric approaches, even when these conditions are violated. Finally, our theory and experiments also show exponential savings in the amount of required data compared with general unbiased estimators."
 
-  - `video` <https://facebook.com/nipsfoundation/videos/1554741347950432/> (3:42) (Swaminathan)
+  - `video` <https://facebook.com/nipsfoundation/videos/1554741347950432?t=222> (Swaminathan)
   - `video` ["Counterfactual Evaluation and Learning for Search, Recommendation and Ad Placement"](http://www.cs.cornell.edu/~adith/CfactSIGIR2016/) tutorial by Adith Swaminathan and Thorsten Joachims
 
 
@@ -2037,7 +2042,7 @@ interesting recent papers:
 >	Envk(at) = [ot, rt, dt]  
 >	To train this RNN, we sample N MDPs from M and obtain k rollouts for each MDP by running the MDP through the RNN as above. We then compute a policy gradient update to move the RNN parameters in a direction which maximizes the returns over the k trials performed for each MDP."  
 
-  - `video` <https://facebook.com/nipsfoundation/videos/1554594181298482/> (7:31) (Abbeel)
+  - `video` <https://facebook.com/nipsfoundation/videos/1554594181298482?t=451> (Abbeel)
   - `video` <http://www.fields.utoronto.ca/video-archive/2017/02/2267-16530> (19:00) (Abbeel)
   - `video` <https://youtu.be/SfCa1HQMkuw?t=1h16m56s> (Schulman)
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/RL2-Fast_Reinforcement_Learning_via_Slow_Reinforcement_Learning.md>
@@ -2162,6 +2167,7 @@ interesting recent papers:
 
   - `video` <https://youtu.be/-u32TOPGIbQ?t=2m43s> (Graves)
   - `video` <https://vimeo.com/237275086> (Bellemare)
+  - `notes` <https://blog.tomrochette.com/machine-learning/papers/alex-graves-automated-curriculum-learning-for-neural-networks>
   - [Artificial Curiosity and Creativity](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity) theory of Juergen Schmidhuber
 
 
@@ -2283,7 +2289,7 @@ interesting recent papers:
   - `post` <https://deepmind.com/blog/reinforcement-learning-unsupervised-auxiliary-tasks/>
   - `video` <https://youtube.com/watch?v=Uz-zGYrYEjA> (demo)
   - `video` <https://youtube.com/watch?v=VVLYTqZJrXY> (Jaderberg)
-  - `video` <https://facebook.com/iclr.cc/videos/1712224178806641/> (1:15:45) (Jaderberg)
+  - `video` <https://facebook.com/iclr.cc/videos/1712224178806641?t=4545> (Jaderberg)
   - `video` <https://youtu.be/bsuvM1jO-4w?t=20m7s> (Mnih)
   - `video` <https://youtube.com/watch?v=-YiMVR3HEuY> (Kilcher)
   - `video` <https://yadi.sk/i/_2_0yqeW3HDbcn> (18:25) (Panin) `in russian`
@@ -2358,6 +2364,9 @@ interesting recent papers:
 
 #### ["Automatic Goal Generation for Reinforcement Learning Agents"](https://arxiv.org/abs/1705.06366) Held, Geng, Florensa, Abbeel
 >	"Reinforcement learning is a powerful technique to train an agent to perform a task. However, an agent that is trained using reinforcement learning is only capable of achieving the single task that is specified via its reward function. Such an approach does not scale well to settings in which an agent needs to perform a diverse set of tasks, such as navigating to varying positions in a room or moving objects to varying locations. Instead, we propose a method that allows an agent to automatically discover the range of tasks that it is capable of performing in its environment. We use a generator network to propose tasks for the agent to try to achieve, each task being specified as reaching a certain parametrized sub-set of the state-space. The generator network is optimized using adversarial training to produce tasks that are always at the appropriate level of difficulty for the agent. Our method thus automatically produces a curriculum of tasks for the agent to learn. We show that, by using this framework, an agent can efficiently and automatically learn to perform a wide set of tasks without requiring any prior knowledge of its environment. Our method can also learn to achieve tasks with sparse rewards, which traditionally pose significant challenges."
+
+  - <https://sites.google.com/view/goalgeneration4rl>
+  - `video` <https://facebook.com/icml.imls/videos/429963197518201?t=2655> (Florensa)
 
 
 #### ["Automated Curriculum Learning for Neural Networks"](https://arxiv.org/abs/1704.03003) Graves, Bellemare, Menick, Munos, Kavukcuoglu
@@ -2608,7 +2617,7 @@ interesting recent papers:
 >	"application of deep successor reinforcement learning"
 
   - `video` <https://youtube.com/watch?v=947bSUtuSQ0> + <https://youtube.com/watch?v=947bSUtuSQ0> (demo)
-  - `video` <https://facebook.com/iclr.cc/videos/1712224178806641/> (54:12) (Dosovitskiy)
+  - `video` <https://facebook.com/iclr.cc/videos/1712224178806641?t=3252> (Dosovitskiy)
   - `video` <https://youtube.com/watch?v=buUF5F8UCH8> (Lamb, Ozair)
   - `video` <https://youtube.com/watch?v=Q0ldKJbAwR8> (Dosovitskiy) `in russian`
   - `video` <https://yadi.sk/i/pMdw-_uI3Gke7Z> (1:02:03) (Shvechikov) `in russian`

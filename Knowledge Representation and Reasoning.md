@@ -702,6 +702,7 @@
 
   ["Engineering and Reverse-Engineering Intelligence Using Probabilistic Programs, Program Induction, and Deep Learning"](https://facebook.com/nipsfoundation/videos/1552446408179926/) by Josh Tenenbaum and Vikash Mansinghka `video`
 
+  ["Building Machines that Learn and Think Like People"](https://facebook.com/icml.imls/videos/432412777273243?t=4362) by Josh Tenenbaum `video`  
   ["Computational Cognitive Science: Generative Models, Probabilistic Programs and Common Sense"](https://youtube.com/watch?v=2WQO9e5Mdj4) by Josh Tenenbaum `video`  
   ["Engineering & Reverse-Engineering Human Common Sense"](https://youtube.com/watch?v=hfoeRiZU5YQ) by Josh Tenenbaum `video`  
   ["Cognitive Foundations for Common-sense Knowledge Representation and Reasoning"](https://youtube.com/watch?v=oSAG57plHnI) by Josh Tenenbaum `video`  
@@ -1271,6 +1272,7 @@
 >	"We consider the problem of performing learning and inference in a large scale knowledge base containing imperfect knowledge with incomplete coverage. We show that a soft inference procedure based on a combination of constrained, weighted, random walks through the knowledge base graph can be used to reliably infer new beliefs for the knowledge base. More specifically, we show that the system can learn to infer different target relations by tuning the weights associated with random walks that follow different paths through the graph, using a version of the Path Ranking Algorithm. We apply this approach to a knowledge base of approximately 500,000 beliefs extracted imperfectly from the web by NELL, a never-ending language learner. This new system improves significantly over NELL’s earlier Horn-clause learning and inference method: it obtains nearly double the precision at rank 100, and the new learning method is also applicable to many more inference tasks."
 
   - `slides` <http://cs.cmu.edu/~nlao/publication/2012/defense.pdf>
+  - `video` <https://youtu.be/bVWDxyydyEM?t=38m24s> (Neubig)
   - `video` <https://youtu.be/i2r5J4XAhsw?t=5m7s> (Murphy)
   - `code` <https://github.com/matt-gardner/pra>
   - `paper` ["Efficient Random Walk Inference with Knowledge Bases"](https://www.cs.cmu.edu/~nlao/publication/2012/thesis.pdf) thesis by Ni Lao
@@ -1585,6 +1587,7 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
 
 >	"We have two key empirical findings: First, we show that compositional training enables us to answer path queries up to at least length 5 by substantially reducing cascading errors present in the base vector space model. Second, we find that somewhat surprisingly, compositional training also improves upon state-of-the-art performance for knowledge base completion, which is a special case of answering unit length path queries. Therefore, compositional training can also be seen as a new form of structural regularization for existing models."
 
+  - `video` <https://youtu.be/bVWDxyydyEM?t=39m36s> (Guu)
   - `notes` <https://codalab.org/worksheets/0xfcace41fdeec45f3bc6ddf31107b829f>
 
 
@@ -1698,48 +1701,12 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
   - `code` <https://github.com/siyuanzhao/key-value-memory-networks>
 
 
-#### ["Teaching Machines to Read and Comprehend"](http://arxiv.org/abs/1506.03340) Hermann, Kocisky, Grefenstette, Espeholt, Kay, Suleyman, Blunsom
->	"Teaching machines to read natural language documents remains an elusive challenge. Machine reading systems can be tested on their ability to answer questions posed on the contents of documents that they have seen, but until now large scale training and test datasets have been missing for this type of evaluation. In this work we define a new methodology that resolves this bottleneck and provides large scale supervised reading comprehension data. This allows us to develop a class of attention based deep neural networks that learn to read real documents and answer complex questions with minimal prior knowledge of language structure."
-
->	"Progress on the path from shallow bag-of-words information retrieval algorithms to machines capable of reading and understanding documents has been slow. Traditional approaches to machine reading and comprehension have been based on either hand engineered grammars, or information extraction methods of detecting predicate argument triples that can later be queried as a relational database. Supervised machine learning approaches have largely been absent from this space due to both the lack of large scale training datasets, and the difficulty in structuring statistical models flexible enough to learn to exploit document structure. While obtaining supervised natural language reading comprehension data has proved difficult, some researchers have explored generating synthetic narratives and queries. Such approaches allow the generation of almost unlimited amounts of supervised data and enable researchers to isolate the performance of their algorithms on individual simulated phenomena. Work on such data has shown that neural network based models hold promise for modelling reading comprehension, something that we will build upon here. Historically, however, many similar approaches in Computational Linguistics have failed to manage the transition from synthetic data to real environments, as such closed worlds inevitably fail to capture the complexity, richness, and noise of natural language. In this work we seek to directly address the lack of real natural language training data by introducing a novel approach to building a supervised reading comprehension data set. We observe that summary and paraphrase sentences, with their associated documents, can be readily converted to context-query-answer triples using simple entity detection and anonymisation algorithms. Using this approach we have collected two new corpora of roughly a million news stories with associated queries from the CNN and Daily Mail websites. We demonstrate the efficacy of our new corpora by building novel deep learning models for reading comprehension. These models draw on recent developments for incorporating attention mechanisms into recurrent neural network architectures. This allows a model to focus on the aspects of a document that it believes will help it answer a question, and also allows us to visualises its inference process. We compare these neural models to a range of baselines and heuristic benchmarks based upon a traditional frame semantic analysis provided by a state-of-the-art natural language processing."
-
->	"The supervised paradigm for training machine reading and comprehension models provides a promising avenue for making progress on the path to building full natural language understanding systems. We have demonstrated a methodology for obtaining a large number of document-query-answer triples and shown that recurrent and attention based neural networks provide an effective modelling framework for this task. Our analysis indicates that the Attentive and Impatient Readers are able to propagate and integrate semantic information over long distances. In particular we believe that the incorporation of an attention mechanism is the key contributor to these results. The attention mechanism that we have employed is just one instantiation of a very general idea which can be further exploited. However, the incorporation of world knowledge and multi-document queries will also require the development of attention and embedding mechanisms whose complexity to query does not scale linearly with the data set size. There are still many queries requiring complex inference and long range reference resolution that our models are not yet able to answer. As such our data provides a scalable challenge that should support NLP research into the future. Further, significantly bigger training data sets can be acquired using the techniques we have described, undoubtedly allowing us to train more expressive and accurate models."
-
->	"Summary:  
->	- Supervised machine reading is a viable research direction with the available data  
->	- LSTM based recurrent networks constantly surprise with their ability to encode dependencies in sequences  
->	- Attention is a very effective and flexible modelling technique"  
-
->	"Future directions:  
->	- More and better data, corpus querying, and cross document queries  
->	- Recurrent networks incorporating long term and working memory are well suited to NLU task"  
-
-----
->	"The model has to be able to detect symbol in the input (answer placeholder in the question) and substitute it with another symbol (word from document)."
-
->	"Two strategies for transducing with replacement of answer placeholder symbol with entity symbol: document||query (putting all the information about document into thought vector before knowing the query) or query||document (putting all the information about query before thinking about the answer). The second approach (filtering document after digesting query) works better."
-
->	"We do not tell the model anything about the structure. We don't tell it there are query and document (they are just symbols). We don't tell it there is symbol it has to substitute (it just has to learn them). So there is really long range between variable in query and answer in document (thousands of words). And the problem is more difficult than other transduction problems because of that."
-
-  - `video` <http://videolectures.net/deeplearning2015_blunsom_memory_reading/#t=1980> (Blunsom)
-  - `video` <http://youtu.be/-WPP9f1P-Xc?t=22m28s> (Blunsom)
-  - `slides` <http://egrefen.com/docs/HowMuchLinguistics2015.pdf>
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=conf/nips/HermannKGEKSB15>
-  - `code` <https://github.com/carpedm20/attentive-reader-tensorflow>
-  - `paper` ["A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task"](https://arxiv.org/abs/1606.02858) by Chen, Bolton, Manning
-
-
 #### ["Text Understanding with the Attention Sum Reader Network"](http://arxiv.org/abs/1603.01547) Kadlec, Schmid, Bajgar, Kleindienst
   `Attention Sum Reader`
 >	"Several large cloze-style context-question-answer datasets have been introduced recently: the CNN and Daily Mail news data and the Children’s Book Test. Thanks to the size of these datasets, the associated text comprehension task is well suited for deep-learning techniques that currently seem to outperform all alternative approaches. We present a new, simple model that uses attention to directly pick the answer from the context as opposed to computing the answer using a blended representation of words in the document as is usual in similar models. This makes the model particularly suitable for question-answering problems where the answer is a single word from the document. Our model outperforms models previously proposed for these tasks by a large margin."
 
 >	"The words from the document and the question are first converted into vector embeddings using a look-up matrix V. The document is then read by a bidirectional GRU network. A concatenation of the hidden states of the forward and backward GRUs at each word is then used as a contextual embedding of this word, intuitively representing the context in which the word is appearing. We can also understand it as representing the set of questions to which this word may be an answer. Similarly the question is read by a bidirectional GRU but in this case only the final hidden states are concatenated to form the question embedding. The attention over each word in the context is then calculated as the dot product of its contextual embedding with the question embedding. This attention is then normalized by the softmax function. While most previous models used this attention as weights to calculate a blended representation of the answer word, we simply sum the attention across all occurrences of each unique words and then simply select the word with the highest sum as the final answer. While simple, this trick seems both to improve accuracy and to speed-up training."
 
-  - `code` <https://github.com/cairoHy/attention-sum-reader>
-
-
-#### ["Embracing data abundance: BookTest Dataset for Reading Comprehension"](https://arxiv.org/abs/1610.00956) Bajgar, Kadlec, Kleindienst
-  `Attention Sum Reader`
 >	"There is a practically unlimited amount of natural language data available. Still, recent work in text comprehension has focused on datasets which are small relative to current computing possibilities. This article is making a case for the community to move to larger data and as a step in that direction it is proposing the BookTest, a new dataset similar to the popular Children’s Book Test (CBT), however more than 60 times larger. We show that training on the new data improves the accuracy of our Attention-Sum Reader model on the original CBT test data by a much larger margin than many recent attempts to improve the model architecture. On one version of the dataset our ensemble even exceeds the human baseline provided by Facebook. We then show in our own human study that there is still space for further improvement."
 
 >	"We have shown that simply infusing a model with more data can yield performance improvements of up to 14.8% where several attempts to improve the model architecture on the same training data have given gains of at most 2.1% compared to our best ensemble result."
@@ -1748,25 +1715,31 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 
 >	"If we move model training from joint CBT NE+CN training data to a subset of the BookTest of the same size (230k examples), we see a drop in accuracy of around 10% on the CBT test datasets. Hence even though the Children’s Book Test and BookTest datasets are almost as close as two disjoint datasets can get, the transfer is still very imperfect. This also suggests that the increase in accuracy when using more data that are strictly in the same domain as the original training data results in a performance increase even larger that the one we are reporting on CBT. However the scenario of having to look for additional data elsewhere is more realistic."
 
+  - `video` <https://youtu.be/fpycaHd1Z08?t=14m46s> (Neubig)
   - `code` <https://github.com/cairoHy/attention-sum-reader>
+  - `paper` ["Embracing data abundance: BookTest Dataset for Reading Comprehension"](https://arxiv.org/abs/1610.00956) by Bajgar, Kadlec, Kleindienst
+
+
+#### ["Question Answering from Unstructured Text by Retrieval and Comprehension"](https://arxiv.org/abs/1703.08885) Watanabe, Dhingra, Salakhutdinov
+  `extended Attention Sum Reader`
+>	"Open domain Question Answering systems must interact with external knowledge sources, such as web pages, to find relevant information. Information sources like Wikipedia, however, are not well structured and difficult to utilize in comparison with Knowledge Bases. In this work we present a two-step approach to question answering from unstructured text, consisting of a retrieval step and a comprehension step. For comprehension, we present an RNN based attention model with a novel mixture mechanism for selecting answers from either retrieved articles or a fixed vocabulary. For retrieval we introduce a hand-crafted model and a neural model for ranking relevant articles. We achieve state-of-the-art performance on WIKIMOVIES dataset, reducing the error by 40%. Our experimental results further demonstrate the importance of each of the introduced components."
+
+  - <https://theneuralperspective.com/2017/04/26/question-answering-from-unstructured-text-by-retrieval-and-comprehension/>
+  - <https://soundcloud.com/nlp-highlights/13a>
 
 
 #### ["Bidirectional Attention Flow for Machine Comprehension"](https://arxiv.org/abs/1611.01603) Seo, Kembhavi, Farhadi, Hajishirzi
   `BiDAF`
 >	"Machine comprehension, answering a query about a given context paragraph, requires modeling complex interactions between the context and the query. Recently, attention mechanisms have been successfully extended to MC. Typically these methods use attention to focus on a small portion of the context and summarize it with a fixed-size vector, couple attentions temporally, and/or often form a uni-directional attention. In this paper we introduce the Bi-Directional Attention Flow network, a multi-stage hierarchical process that represents the context at different levels of granularity and uses bidirectional attention flow mechanism to obtain a query-aware context representation without early summarization."
 
+  - `video` <https://youtu.be/fpycaHd1Z08?t=20m28s> (Neubig)
   - `code` <https://github.com/allenai/allennlp/tree/master/allennlp/models/reading_comprehension>
 
 
 #### ["Coarse-to-Fine Question Answering for Long Documents"](https://arxiv.org/abs/1611.01839) Choi, Hewlett, Lacoste, Polosukhin, Uszkoreit, Berant
 >	"We present a framework for question answering that can efficiently scale to longer documents while maintaining or even improving performance of state-of-the-art models. While most successful approaches for reading comprehension rely on recurrent neural networks, running them over long documents is prohibitively slow because it is difficult to parallelize over sequences. Inspired by how people first skim the document, identify relevant parts, and carefully read these parts to produce an answer, we combine a coarse, fast model for selecting relevant sentences and a more expensive RNN for producing the answer from those sentences. We treat sentence selection as a latent variable trained jointly from the answer only using reinforcement learning. Experiments demonstrate the state of the art performance on a challenging subset of the WIKIREADING dataset and on a new dataset, while speeding up the model by 3.5x-6.7x."
 
-
-#### ["Question Answering from Unstructured Text by Retrieval and Comprehension"](https://arxiv.org/abs/1703.08885) Watanabe, Dhingra, Salakhutdinov
-  `extended Attention Sum Reader`
->	"Open domain Question Answering systems must interact with external knowledge sources, such as web pages, to find relevant information. Information sources like Wikipedia, however, are not well structured and difficult to utilize in comparison with Knowledge Bases. In this work we present a two-step approach to question answering from unstructured text, consisting of a retrieval step and a comprehension step. For comprehension, we present an RNN based attention model with a novel mixture mechanism for selecting answers from either retrieved articles or a fixed vocabulary. For retrieval we introduce a hand-crafted model and a neural model for ranking relevant articles. We achieve state-of-the-art performance on WIKIMOVIES dataset, reducing the error by 40%. Our experimental results further demonstrate the importance of each of the introduced components."
-  - <https://theneuralperspective.com/2017/04/26/question-answering-from-unstructured-text-by-retrieval-and-comprehension/>
-  - <https://soundcloud.com/nlp-highlights/13a>
+  - `video` <https://youtu.be/fpycaHd1Z08?t=36m14s> (Neubig)
 
 
 #### ["End-to-End Goal-Driven Web Navigation"](http://arxiv.org/abs/1602.02261) Nogueira, Cho
@@ -1789,7 +1762,7 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
   `using web search engine`
 >	"We frame Question Answering as a Reinforcement Learning task, an approach that we call Active Question Answering. We propose an agent that sits between the user and a black box question-answering system and which learns to reformulate questions to elicit the best possible answers. The agent probes the system with, potentially many, natural languagere formulations of an initial question and aggregates the returned evidence to yield the best answer. The reformulation system is trained end-to-end to maximize answer quality using policy gradient. We evaluate on SearchQA, a dataset of complex questions extracted from Jeopardy!. Our agent improves F1 by 11% over a state-of-the-art base model that uses the original question/answer pairs."
 
-  - `video` <https://facebook.com/iclr.cc/videos/2125495797479475> (1:03:56) (Bulian, Houlsby)
+  - `video` <https://facebook.com/iclr.cc/videos/2125495797479475?t=3836> (Bulian, Houlsby)
   - `video` <https://youtu.be/soZXAH3leeQ?t=34m43s> (Cho)
 
 
@@ -1829,7 +1802,8 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 >	- small proof depth"  
 
   - `video` <https://youtube.com/watch?v=2ovZnvVPiQ8> (Rocktaschel)
-  - `video` <https://facebook.com/nipsfoundation/videos/1554402331317667> (28:51)
+  - `video` <https://facebook.com/nipsfoundation/videos/1554402331317667?t=1731>
+  - `video` <https://youtu.be/fpycaHd1Z08?t=38m53s> (Neubig)
   - `poster` <https://rockt.github.io/pdf/rocktaschel2017end-poster.pdf>
   - `slides` <https://rockt.github.io/pdf/rocktaschel2017end-slides.pdf> (Rocktaschel)
   - `slides` <http://aitp-conference.org/2017/slides/Tim_aitp.pdf> (Rocktaschel)
